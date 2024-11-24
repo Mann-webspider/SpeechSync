@@ -1,0 +1,26 @@
+{
+  "name": "speechsync",
+  "version": "1.0.0",
+  "description": "Speech Sync will allow users to upload video files, choose a language, and automatically generate subtitles. The application will likely rely on speech-to-text (STT) APIs or AI services, such as Google's Speech-to-Text or OpenAI's Whisper, to transcribe the audio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "body-parser": "^1.20.3",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "env": "^0.0.2",
+    "express": "^4.21.1",
+    "fs-extra": "^11.2.0",
+    "multer": "^1.4.5-lts.1",
+    "next": "^15.0.3",
+    "nodemon": "^3.1.7",
+    "uuid": "^11.0.3"
+  }
+}

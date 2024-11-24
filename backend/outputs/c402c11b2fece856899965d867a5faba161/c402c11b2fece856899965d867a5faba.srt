@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:02,000
+I am a fan of you.
+
+2
+00:00:02,000 --> 00:00:05,000
+You are watching World Cup fans' coffee media.
+
+3
+00:00:05,000 --> 00:00:07,000
+I am a fan of you.
+
+4
+00:00:07,000 --> 00:00:09,000
+I am also a fan of you.
+
+5
+00:00:09,000 --> 00:00:11,000
+You are watching international cricket.
+
+6
+00:00:11,000 --> 00:00:13,000
+You are watching the country of Iran, Australia and Zor-Dar.
+
+7
+00:00:13,000 --> 00:00:15,000
+You are watching the World Cup of Iran.
+
+8
+00:00:15,000 --> 00:00:17,000
+You are watching the EU World Cup.
+
+9
+00:00:17,000 --> 00:00:19,000
+This is the EAM Cricket World Cup.
+
+10
+00:00:19,000 --> 00:00:21,000
+You are watching the world cup.
+

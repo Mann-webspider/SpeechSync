@@ -1,0 +1,29 @@
+# Use a Debian-based image for compatibility with Python and Node.js
+FROM debian:bullseye-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    python3 python3-pip ffmpeg curl build-essential git  \
+    && rm -rf /var/lib/apt/lists/*
+ENV NODE_VERSION=22.11.0
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+ENV NVM_DIR=/root/.nvm
+RUN . "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION}
+RUN . "$NVM_DIR/nvm.sh" && nvm use v${NODE_VERSION}
+RUN . "$NVM_DIR/nvm.sh" && nvm alias default v${NODE_VERSION}
+ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
+# Install Whisper
+RUN pip install --upgrade pip setuptools-rust \
+    && pip install git+https://github.com/openai/whisper.git
+
+COPY package*.json ./
+
+RUN npm install
+    
+COPY . .
+    
+CMD ["npm", "run","dev"]
